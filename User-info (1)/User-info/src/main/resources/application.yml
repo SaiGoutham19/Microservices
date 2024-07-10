@@ -1,0 +1,26 @@
+eureka:
+  clint:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 9090
+spring:
+  application:
+    name: Users-info
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservicesexcelr1
+    username: root
+    password: Sai@99855
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+    eureka:
+      client:
+        serviceUrl:
+          defaultZone: http://localhost:8761/eureka/
+      instance:
+        preferIpAddress: true
